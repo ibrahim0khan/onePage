@@ -8,17 +8,19 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    width: 1200px;
+html ,body{
+    max-width:100%;
     font-family: 'EB Garamond', serif;
     margin:0 auto;
     background:#ddd;
+    overflow-x: hidden;
 }
 p {
     font-size: 14px;
 }
 .bg-header-top {
     background:#8a8a8a url("../images/feature-bottom-background.jpg") fixed;
+    background-size: cover;
     min-height: 200px;
     width: 100%;
     padding: 10% 0;
@@ -263,7 +265,7 @@ p.top-head {
   .team {
       background:#383838;
   }
-  .team .wrapper-content img {
+  .team .wrapper-content .col-4 img {
       width: 100%;
       margin: 0;
   }
@@ -288,8 +290,8 @@ footer .footer-top {
     background:#606060;
 }
 footer .footer-top .row .col-6 img {
-    margin: 3px;
-    padding: 3px 5px;
+    margin: 5px;
+    padding: 5px;
     border: 1px solid gray;
     border-radius: 5px;
 }
@@ -300,8 +302,74 @@ footer .footer-top .row a:hover {
 }
 
 
-  @media screen and (max-width:576px){
+  @media screen and (max-width:768px){
       .offer-circle {
           margin-left: 40%;
       }
+      .main-header ul li{
+          font-size: 7px;
+          margin: 5px 1px;
+      }
+      .main-header ul li a{
+          padding: 5px;
+      }
+      .satisfy .wrapper-content button {
+          font-size: 12px;
+          padding: 1px 3px;
+          margin: 0;
+      }
+
+      .team .card .position {
+        padding: 3px 7px;
+        border-radius: 3px;
+        top:65%;
+        left: 35%;
+    }
+    .card .card-body .mail p{
+        font-size: 7px;
+    }
+    .card .card-body h5 {
+        font-size: 12px;
+    }
+    .mail img{
+        display: none;
+    }
+    .offer-circle {
+        margin-left: 22%;
+    }
+    .feature-bg h2 {
+        font-size: 12px;
+    }
+    .feature-bg .col-2 img {
+        display: none;
+    }
+    
+    .feature-bt-bg .pt-5 .offset-3 img {
+        display: none;
+    }
+    .feature-bt-bg .my-3 .py-3 img {
+        margin: -10px;
+    }
+    .feature-bg img.key-icon {
+        left: 44%;
+    }
+  }
+
+
+  @media screen and (max-width:414px){
+    .team .card .position {
+        top:48%;
+        left: 28%;
+    }
+    .feature-bg img.key-icon {
+        left: 40%;
+    }
+  }
+
+  
+  @media screen and (max-width:320px){
+    .team .card .position {
+        top:38%;
+        left: 18%;
+    }
   }
